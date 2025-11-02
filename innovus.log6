@@ -1,0 +1,89 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.14-s095_1, built Mon Apr 19 14:41:42 PDT 2021
+Options:	
+Date:		Thu Oct 30 15:58:14 2025
+Host:		cad11 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz 12288KB)
+OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 20.11 fill procedures
+<CMD> win
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell fft_4pt
+<CMD> set init_lef_file /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef
+<CMD> set init_mmmc_file fft4.view
+<CMD> set init_verilog fft_4pt_netlist.v
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> init_design
+#% Begin Load MMMC data ... (date=10/30 15:59:49, mem=647.5M)
+#% End Load MMMC data ... (date=10/30 15:59:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=647.7M, current mem=647.7M)
+
+Loading LEF file /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef ...
+**ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+**ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus' again.
+Type 'man IMPLF-3' for more detail.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell fft_4pt
+<CMD> set init_lef_file {\ 
+/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef  /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef  }
+<CMD> set init_mmmc_file fft4.view
+<CMD> set init_verilog fft_4pt_netlist.v
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> init_design
+#% Begin Load MMMC data ... (date=10/30 16:01:45, mem=652.8M)
+The existing analysis_view 'setup_view' has been replaced with new attributes.
+The existing analysis_view 'hold_view' has been replaced with new attributes.
+INFO: New setup and hold views overwrite old settings during design initialization
+#% End Load MMMC data ... (date=10/30 16:01:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=652.9M, current mem=652.9M)
+**ERROR: (IMPSYT-16038):	The specified file ' ' could not be found. Check your file system, correct the file name.
+
+Loading LEF file /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef ...
+**ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+**ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus' again.
+Type 'man IMPLF-3' for more detail.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Oct 30 16:02:05 2025
+  Total CPU time:     0:00:32
+  Total real time:    0:03:52
+  Peak memory (main): 657.28MB
+
+
+*** Memory Usage v#1 (Current mem = 770.590M, initial mem = 284.301M) ***
+*** Message Summary: 0 warning(s), 13 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:31.5, real=0:03:51, mem=770.6M) ---

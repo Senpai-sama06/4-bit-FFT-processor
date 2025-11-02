@@ -1,0 +1,31 @@
+###############################################################
+# File: fft4.globals
+# Description: Globals file to import FFT design into Innovus
+###############################################################
+#/home/install/FOUNDRY/digital/90nm/dig/lib/
+set init_design_settop 1
+set init_top_cell fft_4pt
+
+# Paths (update to your environment)
+set init_lef_file { 
+/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef 
+/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef
+/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef
+/home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef
+}
+set init_mmmc_file {fft4.view}
+set init_verilog {fft_4pt_netlist.v}
+set init_sdc_file {fft_4pt_output.sdc}
+
+# Power and Ground nets
+set init_pwr_net VDD
+set init_gnd_net VSS
+
+# Optional scaling factors
+set pegDesignScaleFactor 1.0
+set pegDefUnitsPerMicron 1000
+
+# Default technology file and RC corners
+#set init_tluplus_file { /home/install/FOUNDRY/digital/90nm/dig/tluplus/slow.tluplus }
+#set init_tluplus_map_file { /home/install/FOUNDRY/digital/90nm/dig/tluplus/map_file }
+

@@ -46,7 +46,7 @@ The RTL design was verified through simulation using [`tb/tb_fft_4pt.v`](tb/tb_f
 ### 🧠 RTL Simulation Waveform
 ![FFT Waveform](images/waveform.jpeg)  
 **Figure 2:** RTL simulation waveform showing valid pipelined outputs after initial two-cycle latency.
-
+![input_verification](images/out.png)  
 ---
 
 ## 3. Physical Design (RTL-to-GDSII) Flow
@@ -96,7 +96,4 @@ The RTL design was verified through simulation using [`tb/tb_fft_4pt.v`](tb/tb_f
 ![Final GDSII](images/gds.png)  
 **Figure 3:** Final GDSII layout of the 2-stage pipelined FFT processor generated using Cadence Innovus.
 
----
-
-## 5. Directory Structure
 

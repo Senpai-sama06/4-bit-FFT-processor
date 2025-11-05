@@ -99,8 +99,3 @@ The RTL design was verified through simulation using [`tb/tb_fft_4pt.v`](tb/tb_f
 
 ![Final GDSII](images/gds.png)  
 **Figure 4:** Final GDSII layout of the 2-stage pipelined FFT processor generated using Cadence Innovus.
-
----
-
-## 5. Directory Structure
-
